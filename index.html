@@ -1,0 +1,620 @@
+   <!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+	<title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./shablon-1_files/w3.css">
+<link rel="stylesheet" href="./shablon-1_files/css">
+  <link rel="stylesheet" type="text/css" href="font-awesome/
+  css/font-awesome.css">
+
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/
+	bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/js/
+	bootstrap.min.js">	
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+    <style type="text/css">
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+
+        img.bilol{
+      width: 100px;
+      height: 100px;
+      float: left;
+      border-radius: 25%;
+}  
+
+
+    .news{
+        column-count: 3;
+        column-gap: 40px;
+        column-rule-style: solid;
+        column-rule-width: 1px;
+        column-rule-color: lightblue;
+    }
+          .news{
+        color: red;
+        column-count: 3;
+        column-gap: 40px;
+        column-rule-style: solid;
+        column-rule-width: 1px;
+        column-rule-color: lightblue;     
+      }
+          .button{
+      background-color: blue;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+
+        img.mmm{
+      width: 125px;
+      height: 125px; 
+      transition: width 2s, height 2s, transform 2s;  }   
+      img.mmm:hover {
+        width: 500px;
+        height: 500px;
+        transform: rotat(360deg);
+      }
+
+
+input[type=text] {
+      /*width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;*/
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid red;
+      border-radius: 50px;
+    }
+
+    input[type=submit] {
+      /*width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;*/
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      background-color: skyblue;
+      border-radius: 20px;
+    }
+          div.muaz{
+        width: 100px;
+        height: 100px;
+      background-image:conic-gradient( red,orange, yellow, green, skyblue, blue, purple); 
+        transition: width 1s;
+
+      }
+      div.muaz:hover{width: 100%;}
+          h1.bor{
+      color: red;
+      animation-name: muaz;
+      animation-duration: 4s;
+      position: relative;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+
+    }
+    @keyframes muaz {
+/*      from{ background-color: red; }
+      to {background-color: yellow;}*/
+      0% {color: red; left: 0px;top: 0px;}
+      25% {color: yellow; left: 200px;top: 0px;} 
+      50% {color: grey; left: 0px;top: 0px;}
+      75% {color: green; left: 200px;top: 0px;}
+      100% {color: blue; left: 0px;top: 0px;}
+    }
+        .page{
+      display: inline-block;
+    }
+    .page a{
+      color: black;
+      float: left;
+      padding: 8px  16px;
+      text-decoration: none;
+    }
+    .page a.active{background-color: green;
+      color: white;
+    }
+    .page a:hover:not(active){
+      background-color:yellow }
+      .snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+    </style>
+
+</head>
+<body data-new-gr-c-s-check-loaded="14.1078.0" data-gr-ext-installed="">
+  <div>
+    <div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+    ❅
+  </div>
+  <div class="snowflake">
+    ❆
+  </div>
+  <div class="snowflake">
+    ❅
+  </div>
+  <div class="snowflake">
+    ❆
+  </div>
+  <div class="snowflake">
+    ❅
+  </div>
+  <div class="snowflake">
+  </div>
+</div>
+</div>
+
+    <div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="#home" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large">Gullar</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Atirgul</a>
+    <a href="#Bmw" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Rasm</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Video</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">Manyu <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#Contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="#bugatti" class="w3-bar-item w3-button">Gullar narhlari</a>
+        <a href="#muaz" class="w3-bar-item w3-button">Afarmleniya</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+<!-- Navbar -->
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<!-- Page content -->
+<div style="border: 5px solid red" id="home">
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center" style="display: none;">
+    <img src="./shablon-1_files/Atirgul1.jpg" width="1300" height="800">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3><i>Gullar-777</i></h3>
+      <p><b>Gullar 777 eng zo'r guldo'kon Manzil; keles hokimyat karzinka ro'parasi</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center" style="display: block;">
+    <img src="./shablon-1_files/atirgul2.jpg" width="1300" height="800">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3><i>Gullar-777</i></h3>
+      <p><b>Gullar 777 eng zo'r guldo'kon Manzil; keles hokimyat karzinka ro'parasi</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center" style="display: none;">
+    <img src="./shablon-1_files/atirgul3.jpg" width="1300" height="800">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3><i>Gullar-777</i></h3>
+      <p><b>Gullar 777 eng zo'r guldo'kon Manzil; keles hokimyat karzinka ro'parasi</b></p>    
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center" style="display: none;">
+    <img src="./shablon-1_files/atirgul4.jpg" width="1300" height="800">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3><i>Gullar-777</i></h3>
+      <p><b>Gullar 777 eng zo'r guldo'kon Manzil; keles hokimyat karzinka ro'parasi</b></p>    
+    </div>
+  </div>
+
+  <div class="mySlides w3-display-container w3-center" style="display: none;">
+    <img src="./shablon-1_files/atirgul5.jpg" width="1300" height="800">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3><i>Gullar-777</i></h3>
+      <p><b>Gullar 777 eng zo'r guldo'kon Manzil; keles hokimyat karzinka ro'parasi</b></p>    
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  <br><br>
+  <div id="about">
+<br><br>
+<h1 style="text-align: center;">Atirgullar</h1><br>
+
+<div class="contanier">
+  <div class="row" >
+    <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="atirgul8.jpg" width="450" height="400">
+  <div class="card-body">
+    <h4 class="card-title">Atirgul</h4>
+    <p class="card-text">Mmuaz IT Academiy o'quvchisi</p>
+    <a href="rasimlar.html" class="btn btn-primary btn-block">Aloqa</a>
+  </div>      
+    </div>
+  </div>
+    <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="atirgul7.jpg" width="450" height="400">
+  <div class="card-body">
+    <h4 class="card-title">Atirgul</h4>
+    <p class="card-text">Mmuaz IT Academiy o'quvchisi</p>
+    <a href="rasimlar.html" class="btn btn-primary btn-block">Aloqa</a>
+  </div>      
+    </div>
+  </div>
+        <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="atirgul5.jpg" width="450" height="400">
+  <div class="card-body">
+    <h4 class="card-title">Atirgul</h4>
+    <p class="card-text">Mmuaz IT Academiy o'quvchisi</p>
+    <a href="rasimlar.html" class="btn btn-primary btn-block">Aloqa</a>
+  </div>      
+    </div>    
+  </div>
+<div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="onam.jpg" width="450" height="400">
+  <div class="card-body">
+    <h4 class="card-title">Atirgul</h4>
+    <p class="card-text">Mmuaz IT Academiy o'quvchisi</p>
+    <a href="rasimlar.html" class="btn btn-primary btn-block">Aloqa</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<br><br><br>
+
+</div>
+<br><br>
+<div class="w3-black" id="tour"><div id="Bmw">
+<br><br><br>
+    <table>
+      <tr>
+        <th></th>
+  <th><h1 style="text-align: center;">Gullar</h1></th>
+  <th></th>
+</tr>
+
+  <tr>
+<td><img src="idish.jpg" width="425" height="300"></td>   
+<td><img src="gulp.jpg" width="425" height="300"></td>
+<td><img src="sariq.jpg" width="425" height="300"></td>    
+  </tr>
+  <tr>
+    <td><h1 style="text-align: center;"> </h1></td>
+    <td><h1 style="text-align: center;"></h1></td>
+    <td><h1 style="text-align: center;"></h1></td>
+  </tr>
+</table>
+<br><br>
+
+ <center><a href="#" class="button">Batafsil</a>
+<a href="#" class="button">News</a>
+<a href="#" class="button">Hobbi</a>
+<a href="#" class="button">Acaunt</a></center><br><br><br><hr>
+</div>
+</div>
+<br><br>
+<div id="contact">
+<br><br><br><br>
+<h1 class="text-center">Videolar</h1>
+<table>
+  <tr>
+<th><video width="650" height="500" controls>
+  <source src="afar.mp4" type="video/mp4">
+</video></th>
+<th><video width="650" height="500" controls>
+  <source src="shkalad.mp4" type="video/mp4">
+</video></th>
+</tr>
+<tr>
+  <th><h1 class="text-center">BMW</h1></th>
+  <th><h1 class="text-center">Mersades 4*4</h1></th>
+</tr>
+<tr>
+<th><video width="650" height="500" controls>
+  <source src="ramazon.mp4" type="video/mp4">
+</video></th>
+<th><video width="650" height="500" controls>
+  <source src="Afar1.mp4" type="video/mp4">
+</video></th>
+</tr>
+<tr>
+  <th><h1 class="text-center">Geli 4*4</h1></th>
+  <th><h1 class="text-center">Mersades</h1></th>
+</tr>
+<tr>
+  <th></th>
+<br><br>
+<th><audio controls>
+  <source src="SHAHAR.mp3" type="audio/mp3">
+</audio></th>
+<th></th>
+</tr>
+</table>
+</div>
+
+<br>
+  <br>
+
+<div class="w3-black" id="tour"><div id="Contact"><br><br>
+  <h1 class="text-center">Contact</h1>
+
+<form action="#" target="_blank" style="text-align: left;">
+  <fieldset>
+
+    <label for="name">F.I.O.</label>
+    <input type="text" name="name" id="name" required>
+    <label for="phone">Telefon</label>
+    <input type="text" name="phone" id="phone" required>
+
+    Davlat: <br>
+  <select name="davlat">
+    <option value="Amerika">Amerika</option>
+    <option value="Germaniya">Germaniya</option>
+    <option value="O'zbekiston">O'zbekiston</option>
+  </select><br>
+  <input type="submit" name="submit" value="yuborish">
+</fieldset>
+</form>
+ <center>
+          <a href="https://t.me/gullar_777" class="telegram"><h6><i class="fa fa-telegram"></i>Telegram; Gullar_777</h6></a>
+          <a href="aboo_florist" class="instagram"><h6><i class="fa fa-instagram"></i>Instagram; aboo_florist</h6></a>
+          <a href="#" class="phone"><i class="fa fa-phone"></i></h6>Phone; +998 99 876-61-91</h6></a>
+    </center>
+<br><br>
+</div>
+</div>
+<br><br>
+ <div id="bugatti">
+  <br><br>
+  <h1 class="text-center"><i>Gullar narhlari</i></h1>
+  <div class="contanier">
+    <div class="row">
+  <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="atirgul8.jpg" width="450" height="400">
+  <div class="card-body">
+    <h4 class="card-title">Bmw</h4>
+    <p class="card-text">Bmw judaham zo'r moshina</p>
+<button class="btn btn-primary btn-block" type="button" onclick="alert('200.000$ turadi sotib olasizmi.')">Gulning narhi</button>
+  </div>
+</div>
+</div>
+  <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="atirgul1.jpg" width="450" height="400">
+  <div class="card-body">
+    <h4 class="card-title">Malibu</h4>
+    <p class="card-text">Malibu yengi salondan chiqdi.</p>
+<button class="btn btn-primary btn-block" type="button" onclick="alert('25.000$ turadi sotib olasizmi.')">Gulning narhi</button>
+  </div>
+</div>
+</div>
+  <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="lola.jpg" width="450" height="400">
+  <div class="card-body">
+    <h4 class="card-title">Mersades</h4>
+    <p class="card-text">Mersades judaham zo'r moshina</p>
+<button class="btn btn-primary btn-block" type="button" onclick="alert('200.000$ turadi sotib olasizmi.  Sotib olmoqchi bolsangiz shu nomerga telefon qiling: 99 878 51 20')">Gulning narhi</button>
+  </div>
+</div>
+</div>
+  <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="lola oq.jpg" width="450" height="400">
+  <div class="card-body">
+    <h4 class="card-title">Mersades</h4>
+    <p class="card-text">Mersades judaham zo'r moshina</p>
+<button class="btn btn-primary btn-block" type="button" onclick="alert('200.000$ turadi sotib olasizmi.  Sotib olmoqchi bolsangiz shu nomerga telefon qiling: 99 878 51 20')">Mersadesning narhi</button>
+  </div>
+</div>
+</div>
+  <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="gulp.jpg" width="450" height="400">
+  <div class="card-body">
+    <h4 class="card-title">Mersades</h4>
+    <p class="card-text">Mersades judaham zo'r moshina</p>
+<button class="btn btn-primary btn-block" type="button" onclick="alert('200.000$ turadi sotib olasizmi.  Sotib olmoqchi bolsangiz shu nomerga telefon qiling: 99 878 51 20')">Mersadesning narhi</button>
+  </div>
+</div>
+</div>
+  <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="atirgul2.jpg" width="450" height="400">
+  <div class="card-body">
+    <h4 class="card-title">Mersades</h4>
+    <p class="card-text">Mersades judaham zo'r moshina</p>
+<button class="btn btn-primary btn-block" type="button" onclick="alert('200.000$ turadi sotib olasizmi.  Sotib olmoqchi bolsangiz shu nomerga telefon qiling: 99 878 51 20')">Mersadesning narhi</button>
+  </div>
+</div>
+</div>
+  <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="oq gul.jpg" width="450" height="400">
+  <div class="card-body">
+    <h4 class="card-title">Mersades</h4>
+    <p class="card-text">Mersades judaham zo'r moshina</p>
+<button class="btn btn-primary btn-block" type="button" onclick="alert('200.000$ turadi sotib olasizmi.  Sotib olmoqchi bolsangiz shu nomerga telefon qiling: 99 878 51 20')">Mersadesning narhi</button>
+  </div>
+</div>
+</div>
+  <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="onam.jpg" width="450" height="400">
+  <div class="card-body">
+    <h4 class="card-title">Mersades</h4>
+    <p class="card-text">Mersades judaham zo'r moshina</p>
+<button class="btn btn-primary btn-block" type="button" onclick="alert('200.000$ turadi sotib olasizmi.  Sotib olmoqchi bolsangiz shu nomerga telefon qiling: 99 878 51 20')">Mersadesning narhi</button>
+</div>
+  </div>
+</div>
+</div>
+</div><br><br>
+  <img src="savatcha.jpg" class="mmm">
+  <img src="gulidish.jpg" class="mmm">
+  <img src="idish.jpg" class="mmm">
+  <img src="atirgul5.jpg" class="mmm">
+  <img src="atirgul8.jpg" class="mmm">
+  <img src="lola oq.jpg" class="mmm">
+  <img src="lola.jpg" class="mmm">
+  <img src="oq gul.jpg" class="mmm">
+  <img src="pushti.jpg" class="mmm">
+  <img src="sariq.jpg" class="mmm"><br>
+</div>
+<br>
+
+<br>
+<div class="w3-black" id="tour"><div id="muaz"><br><br>
+  <h1 class="text-center">Afarmleniya</h1>
+<div class="contanier">
+  <div class="row" >
+    <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="onajonom.jpg" style="width: 100%;">
+  <div class="card-body">
+    <h4 class="card-title">Rolis Rois eng qimatt moshina</h4>
+    <p class="card-text">Rolis Rois dunyoda bitta qilib yasaladi </p>
+    <a href="video.html" class="btn btn-primary btn-block">Aloqa</a>
+  </div>      
+    </div>
+  </div>  
+        <div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="onajon.jpg" height="270">
+  <div class="card-body">
+    <h4 class="card-title">Rolis Rois eng qimatt moshina</h4>
+    <p class="card-text">Rolis Rois dunyoda bitta qilib yasaladi</p>
+    <a href="video.html" class="btn btn-primary btn-block">Aloqa</a>
+  </div>      
+    </div>    
+  </div>
+<div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="onajon2.jpg" height="270">
+  <div class="card-body">
+    <h4 class="card-title">Rolis Rois eng qimatt moshina</h4>
+    <p class="card-text">Rolis Rois dunyoda bitta qilib yasaladi</p>
+    <a href="video.html" class="btn btn-primary btn-block">Aloqa</a>
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card" style="width: 300px;">
+  <img class="card-img-top" src="afar1.jpg" style="width: 100%">
+  <div class="card-body">
+    <h4 class="card-title">Rolis Rois eng qimatt moshina</h4>
+    <p class="card-text">Rolis Rois dunyoda bitta qilib yasaladi</p>
+    <a href="video.html" class="btn btn-primary btn-block">Aloqa</a>
+  </div>
+</div>
+</div>
+<br>
+<br>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("biloliddin") == -1) {
+    x.className += " biloliddin";
+  } else { 
+    x.className = x.className.replace(" biloliddin", "");o
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close i  t
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script><br><br><br><br>
+<a href="video.html" class="btn btn-primary btn-block btn-lg">Video'larga</a>
+<br>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><br><br><br>
+</html>
